@@ -4,6 +4,8 @@ import Login from './components/Login';
 import Profile from './components/Profile';
 import Calculator from './components/Calculator';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import List from './components/List';
+import Api from './components/Api';
 
 function App() {
   return (
@@ -22,9 +24,12 @@ function App() {
               }
             />
             <Route path="/cal" element={<Calculator />} />
+            <Route path="/li" element={<List />} />
+            <Route path="/ap" element={<Api />} />
           </Routes>
         </div>
       </Router>
+      
     </UserConextProvider>
   );
 }
